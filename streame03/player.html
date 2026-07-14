@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>StreamE03 — Player</title>
+    <link rel="stylesheet" href="css/styles.css" />
+    <link
+      rel="icon"
+      href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🎬</text></svg>"
+    />
+  </head>
+  <body>
+    <header class="topbar">
+      <a class="brand" href="index.html">
+        <span class="brand-dot"></span> Stream<span class="brand-accent">E03</span>
+      </a>
+      <a class="back-link" href="index.html">← Back to catalog</a>
+    </header>
+
+    <main class="player-page container">
+      <div class="player-wrap">
+        <video id="video" controls playsinline></video>
+        <div id="status" class="status"></div>
+      </div>
+
+      <section class="details">
+        <h1 id="title"></h1>
+        <div class="meta" id="meta"></div>
+        <p id="description" class="description"></p>
+
+        <h3>Up Next</h3>
+        <div id="upnext" class="upnext"></div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <p>StreamE03 — a demo VOD site. Streams are public HLS test sources.</p>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/hls.js@1.5.13/dist/hls.min.js"></script>
+    <script src="js/data.js"></script>
+    <script src="js/player.js"></script>
+  </body>
+</html>
